@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Boschin Spiel</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <div id="game">
+  <div id="hud">
+    <span>💰 <b id="coins">0</b></span>
+    <span>👜 <b id="bags">0</b></span>
+    <span>👑 <b id="crowns">0</b></span>
+    <span>🍺 <b id="beers">0</b></span>
+    <span>✨ <b id="fireflies">0</b></span>
+    <span>📦 <b id="boxes">0</b></span>
+  </div>
+
+  <div id="menu">
+    <div class="wallet">💰 <b id="mCoins">0</b> 👜 <b id="mBags">0</b> 👑 <b id="mCrowns">0</b> 🍺 <b id="mBeers">0</b> ✨ <b id="mFireflies">0</b> 📦 <b id="mBoxes">0</b></div>
+    <h1>BOSCHIN<br><span>PIXEL RUN</span></h1>
+    <div id="skinPreview">😎</div>
+    <div id="activeSkin">Classic Boschin</div>
+    <button onclick="startGame()">PLAY</button>
+    <button onclick="openShop()">SHOP</button>
+    <div id="boxResult"></div>
+  </div>
+
+  <div id="shop">
+    <div class="wallet">💰 <b id="sCoins">0</b> 👜 <b id="sBags">0</b> 👑 <b id="sCrowns">0</b> 🍺 <b id="sBeers">0</b> ✨ <b id="sFireflies">0</b> 📦 <b id="sBoxes">0</b></div>
+    <h2>🛍️ BOSCHIN SHOP</h2>
+    <div id="skinList"></div>
+    <button onclick="closeShop()">ZURÜCK</button>
+  </div>
+
+  <div id="lootModal">
+    <div id="lootBox" onclick="openBox()">📦</div>
+    <div id="lootText">Tippe 3x zum Öffnen</div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+
+</html>
